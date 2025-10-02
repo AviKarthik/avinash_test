@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Avinash Internship Wrap Up</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<img src="images/antaris_logo_full_transparent.png" alt="" height = 100px width = 250px />
+					<h1>My internship at Antaris</h1>
+					<p>Avinash Karthik</p>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>The Mission</h2>
+							</header>
+							<p>The goal for the internship was to implement a payload I designed which serves to generate a form of artifical gravity through rotation. It does this by exerting centrifugal force on any object inside of it. 
+								During the internship, with the help of the amazing mentors I implemented full end to end software and my own custom communication protocol for communication from ground station to obc to the payload computer. 
+								I also fully built, tested, reiterated, and finalized the hardware design.
+							</p>
+						</div>
+						<div class="col-6 col-12-medium imp-medium">
+							<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<ul class="major-icons">
+								<li><span class="image fit"><video src="images/vid04.mp4" alt="" autoplay muted loop playsinline/></span></li>
+								<li><span class="image fit"><img src="images/pic08.jpg" alt="" width="125" height="400"/></span></li>
+							</ul>
+						</div>
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>The process</h2>
+							</header>
+							<p>
+								I came into the internship with a lot to be learned when it came to the software concepts I would need to apply when writing the communication software as well as the software to run and read back the different components properly.
+								I was provided with useful resources to learn everything I needed to move forward and the mentors were there to help every step of the way.
+							</p>
+							<p>
+								I began by implementing communication between the ground station, obc, and the payload computer. I needed to create a protocol to ensure that all components were encoding and decoding the correct data. This involved 3 separate threads and 2 queues as well as each respective function to efficiently receive, decode, encode, and relay data to the next target.
+							</p>
+							<p>
+								Next, I turned my focus to writing the software and testing all of the components that would be used, including the bringup of the carrier board, and testing of the motor and force sensor. This was the step which came with the most issues to resolve, but with help from the mentors we got everything to work.
+							</p>
+							<p>
+								Then, I went through multiple iterations of the hardware design due to persistent issues, though finally I was able to get it to work as intended.
+							</p>
+							<p>
+								After I finalized and assembled the hardware design we performed full integrated testing with all of the parts mounted, with routing commands from the ground station through the pipeline. 
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>The Payload</h2>
+					</header>
+					<div class="row gtr-150">
+						<div class="col-4 col-12-medium">
+							<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
+							<h3>Technical Issues</h3>
+							<p>We ran into a ton of issues while working on this project, but working with the antaris team gave me insight into how these sorts of problems are resolved at a professional level</p>
+						</div>
+						<div class="col-4 col-12-medium">
+							<span class="image fit">
+								<video controls>
+									<source src="images/vid02.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</span>
+							<h3>How It Works</h3>
+							<p>This video is just a quick explanation from me on how the payload works and what it's purpose is</p>
+
+						</div>
+						
+						<div class="col-4 col-12-medium">
+							<span class="image fit">
+								<video controls>
+									<source src="images/vid01.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</span>
+							<h3>Demonstration</h3>
+							<p>This video is a demonstration of how the machine works, and shows how the force data received changes based on the rotation speed</p>
+						</div>
+											
+					</div>
+				</div>
+			</section>
+
+			<section id="four" class="main style2 special">
+				<div class="container flex">
+				  <div class="text-block">
+					<header class="major">
+					  <h2>ACP Validation</h2>
+					</header>
+					<p>
+					  The last thing I did was to validate my payload using the Antaris Cloud Platform, 
+					  it was super simple and intuitive to use, at just the press of a button I was able 
+					  to control and readback all functions of my payload. I was able to accurately simulate 
+					  how the payload would actual perform in flight and add the satelite specifications as 
+					  well as ground stations etc. For my usecase I used the ACP to send commands to my 
+					  payload to operate the centrifuge as well as getting periodic readback form the force 
+					  sensor in the payload state to monitor the force output.
+					</p>
+					<ul class="actions special">
+					  <li><a href="https://www.antaris.space/platform" target="_blank" class="button wide primary">ACP</a></li>
+					</ul>
+				  </div>
+			  
+				  <div class="image-block">
+					<img src="images/acp.png" alt="Antaris Cloud Platform UI">
+				  </div>
+				</div>
+			  </section>
+
+			  <!-- Five -->
+		<section id="five" class="main style1 special">
+			<div class="container">
+			<header class="major">
+				<h2>Future Plans</h2>
+				<p>Looking ahead: what I want to build from this project and where I’m headed personally.</p>
+			</header>
+		
+			<div class="row gtr-150">
+				<div class="col-6 col-12-medium">
+				<span class="image fit"><img src="images/project_future.jpg" height = 562px alt="Project future image" /></span>
+				<h3>Project-Related Plans</h3>
+				<p>
+					• Continue refining the payload design<br>
+					• Add automated force logging with user friendly display<br>
+					• Perform environmental tests on the payload<br>
+					• Launch payload and publish results
+				</p>
+				</div>
+		
+				<div class="col-6 col-12-medium">
+				<span class="image fit"><img src="images/personal_goals.jpg" alt="Personal goals image" /></span>
+				<h3>Personal Goals</h3>
+				<p>
+					• Deepen my expertise in aerospace, engineering, and software<br>
+					• Explore entrepreneurship opportunities in satellite and space tech<br>
+					• Continue working on further projects in university
+				</p>
+				</div>
+			</div>
+		</div> <!-- end .container -->
+	</section> <!-- end #five -->
+	
+		
+			  
+			
+			  
+		
+
+		<!-- Footer -->
+		  
+			<section id="footer">
+				<div class="container">
+					<header class="major">
+						<h2>Final Thoughts</h2>
+					</header>
+					<p>This internship was an amazing opportunity for me, I learned a lot and am truly grateful to my mentors for all of the help and to antaris for the opportunity.</p>
+				</div>
+				<ul class="icons">
+				</ul>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
